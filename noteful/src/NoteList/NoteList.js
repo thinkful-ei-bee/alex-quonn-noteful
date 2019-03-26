@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Note from "../Note/Note";
  function NoteList  (props) {  
-  console.log(props.notes);  
   return (
       <div>
         <ul>
@@ -12,7 +11,7 @@ import Note from "../Note/Note";
           </li>
 )}
         </ul>
-        
+        <Link to="/addNote">Add Note</Link>
       </div>
     )
     
